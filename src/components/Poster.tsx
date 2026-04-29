@@ -19,6 +19,10 @@ const Poster = () => {
         style={{ objectPosition: "center 40%" }}
       />
 
+      {/* Grain texture for premium printed feel */}
+      <div className="grain-overlay" aria-hidden="true" />
+
+
       {/* Gradient overlay for legibility */}
       <div
         className="absolute inset-0"
@@ -77,15 +81,17 @@ const Poster = () => {
           </h1>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontStyle: "italic",
-              fontWeight: 700,
-              fontSize: "82pt",
-              lineHeight: 0.94,
+              fontFamily: "'Great Vibes', cursive",
+              fontWeight: 400,
+              fontSize: "108pt",
+              lineHeight: 0.72,
               marginTop: "-8pt",
               color: "hsl(var(--poster-gold))",
-              textShadow: "0 2px 6px rgba(0,0,0,0.6)",
+              textShadow: "0 2px 8px rgba(0,0,0,0.65)",
               letterSpacing: "0.01em",
+              position: "relative",
+              zIndex: 10,
+              transform: "translateX(-3mm)",
             }}
           >
             Ibicenca
@@ -164,7 +170,7 @@ const Poster = () => {
             />
           </div>
 
-          <div className="mt-4 grid grid-cols-1 gap-3.5 text-center">
+          <div className="mt-4 grid grid-cols-1 gap-[18px] text-center">
             <div>
               <div
                 className="text-[8.75pt] uppercase tracking-[0.2em] font-semibold"
@@ -257,17 +263,18 @@ const Poster = () => {
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontWeight: 500,
-                fontSize: "24pt",
+                fontSize: "27pt",
                 lineHeight: 1,
                 color: "hsl(40 52% 90%)",
                 letterSpacing: "0.01em",
+                fontVariantNumeric: "tabular-nums",
               }}
             >
-              22,30 €
+              22,00 €
             </div>
             <div
-              className="text-[8pt] mt-1.5"
-              style={{ color: "hsl(var(--poster-ink-soft) / 0.9)" }}
+              className="text-[9pt] mt-1.5"
+              style={{ color: "hsl(var(--poster-ink-soft) / 0.97)" }}
             >
               2 € destinados a la Asociación Jubilats Serra
             </div>
