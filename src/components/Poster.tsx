@@ -293,7 +293,7 @@ const Poster = () => {
               textShadow: "0 2px 10px hsl(0 0% 0% / 0.28)",
             }}
           >
-            Cena 20:30–22:30 · Baile · DJ
+            Cena 20:30–22:30
           </div>
         </div>
 
