@@ -295,12 +295,12 @@ const Poster = () => {
                 "linear-gradient(90deg, transparent, hsl(var(--poster-gold) / 0.7), transparent)",
             }}
           />
-          <div
-            className="uppercase tracking-[0.4em] text-[9pt]"
-            style={{ color: "hsl(var(--poster-ink-soft))" }}
-          >
-            Reservas
-          </div>
+            <div
+              className="uppercase tracking-[0.22em] text-[9pt]"
+              style={{ color: "hsl(var(--poster-ink-soft))" }}
+            >
+              Reserva Tu Mesa
+            </div>
           <div
             className="mt-1 text-[14pt]"
             style={{
