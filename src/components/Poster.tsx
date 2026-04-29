@@ -177,14 +177,13 @@ const Poster = () => {
           </div>
         </div>
 
-        {/* Menu card */}
         <section
           className="mt-auto mx-auto"
           style={{
             width: "fit-content",
             background: "hsl(0 0% 0% / 0.35)",
             color: "hsl(var(--poster-ink))",
-            padding: "5.5mm 10mm 5mm",
+            padding: "4mm 6mm 3.5mm",
             borderRadius: "3mm",
             border: "1px solid hsl(42 90% 70% / 0.25)",
             backdropFilter: "blur(4px)",
