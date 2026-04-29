@@ -16,7 +16,10 @@ const Poster = () => {
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: "center 40%" }}
+        style={{
+          objectPosition: "center 40%",
+          filter: "brightness(1.1) contrast(1.05) saturate(1.04)",
+        }}
       />
 
       {/* Grain texture for premium printed feel */}
@@ -35,7 +38,7 @@ const Poster = () => {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, transparent 38%, hsl(0 0% 0% / 0.3) 74%, hsl(0 0% 0% / 0.52) 100%)",
+            "radial-gradient(ellipse at center, transparent 42%, hsl(0 0% 0% / 0.24) 74%, hsl(0 0% 0% / 0.44) 100%)",
         }}
         aria-hidden="true"
       />
