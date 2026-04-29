@@ -181,11 +181,10 @@ const Poster = () => {
         <section
           className="mt-auto mx-auto"
           style={{
-            width: "80%",
-            maxWidth: "142mm",
+            width: "fit-content",
             background: "hsl(0 0% 0% / 0.35)",
             color: "hsl(var(--poster-ink))",
-            padding: "5.5mm 7.4mm 5mm",
+            padding: "5.5mm 10mm 5mm",
             borderRadius: "3mm",
             border: "1px solid hsl(42 90% 70% / 0.25)",
             backdropFilter: "blur(4px)",
