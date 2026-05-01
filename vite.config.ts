@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
-  base: command === "build" ? "/print-first-poster/" : "/",
+  base: command === "build" ? "/print-first-qr-card/" : "/",
   server: {
     host: "::",
     port: 8080,
