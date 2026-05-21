@@ -46,7 +46,7 @@ const Poster = () => {
         width: "210mm",
         height: "297mm",
       }}
-      aria-label="Menú especial Fira de la Cirera Bar Jubilats Serra"
+      aria-label="Menú especial Bar Jubilats Serra Fira de la Cirera"
     >
       <img
         src={bgImage}
@@ -109,9 +109,9 @@ const Poster = () => {
 
       <div className="poster-content" style={{ zIndex: 3 }}>
         <header className="poster-header">
-          <p>Menú especial</p>
-          <h1>Fira de la Cirera</h1>
-          <div>Bar Jubilats · Serra</div>
+          <p>Bar Jubilats · Serra</p>
+          <h1>Menú especial</h1>
+          <div>Fira de la Cirera</div>
         </header>
 
         <main className="menu-panel" aria-label="Menú especial">
