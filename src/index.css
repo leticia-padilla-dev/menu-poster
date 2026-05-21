@@ -4,7 +4,7 @@
 
 /* ===========================
    PRINT-FIRST DESIGN SYSTEM
-   Cartel Fiesta Ibicenca
+   Menu poster
    =========================== */
 
 @layer base {
@@ -19,17 +19,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 25 25% 15%;
 
-    /* Mediterranean Ibiza palette */
-    --primary: 25 70% 45%;            /* warm terracotta */
+    /* Cherry fair menu palette */
+    --primary: 143 45% 18%;
     --primary-foreground: 40 30% 98%;
 
-    --secondary: 200 40% 35%;         /* deep sea blue */
+    --secondary: 354 58% 31%;
     --secondary-foreground: 40 30% 98%;
 
     --muted: 35 20% 88%;
     --muted-foreground: 25 15% 35%;
 
-    --accent: 40 75% 55%;             /* warm gold */
+    --accent: 42 58% 58%;
     --accent-foreground: 25 30% 12%;
 
     --destructive: 0 70% 45%;
@@ -88,6 +88,188 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .cherry-menu-poster {
+    background: hsl(38 48% 90%);
+    color: hsl(24 25% 12%);
+  }
+
+  .paper-softener {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(180deg, hsl(38 62% 95% / 0.28) 0%, transparent 28%),
+      radial-gradient(circle at 50% 36%, hsl(38 70% 96% / 0.45), transparent 45%);
+  }
+
+  .poster-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15mm 18mm 54mm;
+  }
+
+  .poster-header {
+    width: 100%;
+    text-align: center;
+    color: hsl(143 45% 16%);
+  }
+
+  .poster-header p {
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 26pt;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .poster-header h1 {
+    margin: 4mm 0 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 52pt;
+    font-weight: 700;
+    line-height: 0.9;
+    color: hsl(354 58% 28%);
+  }
+
+  .poster-header div {
+    margin-top: 3mm;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+  }
+
+  .menu-panel {
+    width: min(136mm, 100%);
+    margin-top: 12mm;
+    padding: 7mm 10mm 8mm;
+    border: 1px solid hsl(42 34% 55% / 0.46);
+    border-radius: 3mm;
+    background: hsl(38 62% 95% / 0.82);
+    box-shadow: 0 12mm 28mm hsl(35 30% 20% / 0.12);
+    backdrop-filter: blur(2px);
+  }
+
+  .menu-section + .menu-section {
+    margin-top: 5mm;
+  }
+
+  .menu-section-heading {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 4mm;
+    color: hsl(143 45% 18%);
+  }
+
+  .menu-section-heading span {
+    height: 1px;
+    background: hsl(42 34% 45% / 0.48);
+  }
+
+  .menu-section-heading h2 {
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 20pt;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .menu-section ul {
+    display: grid;
+    gap: 2.8mm;
+    margin: 4mm 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu-section li {
+    display: grid;
+    grid-template-columns: 4mm 1fr;
+    gap: 3mm;
+    align-items: baseline;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 17pt;
+    font-weight: 600;
+    line-height: 1.15;
+    color: hsl(24 25% 12%);
+  }
+
+  .menu-bullet {
+    width: 2.2mm;
+    height: 2.2mm;
+    border-radius: 999px;
+    background: hsl(354 64% 33%);
+    box-shadow: 0 -0.8mm 0 -0.35mm hsl(143 45% 18%);
+  }
+
+  .menu-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 7mm;
+    align-items: center;
+    margin-top: 6mm;
+  }
+
+  .menu-bottom-row p {
+    margin: 0;
+    padding: 2.5mm 6mm 3mm;
+    border-radius: 999px;
+    background: hsl(354 58% 31%);
+    color: hsl(38 62% 96%);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 19pt;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    box-shadow: inset 0 0 0 1px hsl(38 62% 96% / 0.25);
+  }
+
+  .menu-bottom-row aside {
+    display: grid;
+    width: 34mm;
+    height: 34mm;
+    place-items: center;
+    align-content: center;
+    border: 1.4mm double hsl(38 62% 94% / 0.72);
+    border-radius: 999px;
+    background: hsl(354 58% 29%);
+    color: hsl(38 62% 96%);
+    text-align: center;
+    box-shadow: 0 5mm 12mm hsl(354 58% 20% / 0.22);
+  }
+
+  .menu-bottom-row strong {
+    display: block;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 31pt;
+    font-weight: 700;
+    line-height: 0.85;
+  }
+
+  .menu-bottom-row aside span {
+    display: block;
+    margin-top: 1.5mm;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 7.2pt;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    text-transform: uppercase;
   }
 }
 
