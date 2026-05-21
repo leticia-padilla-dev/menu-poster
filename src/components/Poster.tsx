@@ -1,4 +1,4 @@
-import bgImage from "@/assets/fiesta-cireres.png";
+import bgImage from "@/assets/cartel-menu-cirere.png";
 import cherryBranch from "@/assets/cherries_botanical_right.png";
 import cherryDetail from "@/assets/cherries_botanical_left.png";
 import cherryFlowers from "@/assets/cherries_botanical_flowers.png";
