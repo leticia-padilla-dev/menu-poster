@@ -1,6 +1,7 @@
 import bgImage from "@/assets/fiesta-cireres.png";
 import cherryBranch from "@/assets/cherries_botanical_right.png";
 import cherryDetail from "@/assets/cherries_botanical_left.png";
+import cherryFlowers from "@/assets/cherries_botanical_flowers.png";
 
 // High-quality custom SVG Cherry Icon for bullet points and section ornaments
 const CherryIcon = ({ className, size = 16 }: { className?: string; size?: number }) => (
@@ -138,6 +139,27 @@ const Poster = () => {
           opacity: 0.92,
           mixBlendMode: "multiply",
           transform: "rotate(-8deg)",
+          pointerEvents: "none",
+          userSelect: "none",
+        }}
+      />
+
+      {/* Middle-Right Cherry Branch with Flowers (Genuine vintage botanical illustration overlay featuring blossoms, in the middle height on the right side) */}
+      <img
+        src={cherryFlowers}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          top: "120mm",
+          right: "-12mm",
+          width: "75mm",
+          height: "75mm",
+          objectFit: "contain",
+          opacity: 0.95,
+          mixBlendMode: "multiply",
+          transform: "rotate(-6deg)",
           pointerEvents: "none",
           userSelect: "none",
         }}
