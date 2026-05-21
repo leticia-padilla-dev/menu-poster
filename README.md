@@ -1,10 +1,11 @@
-# Fiesta Ibicenca · Bar Jubilats Serra
+# Menú especial · Bar Jubilats Serra
 
-Cartel imprimible web (print-first) para la Fiesta Ibicenca del Bar Jubilats Serra.
+Cartel imprimible web (print-first) para el menú especial de Bar Jubilats Serra durante la Fira de la Cirera / Dia de la Cirera.
 
 Una sola página optimizada para:
-- Impresión profesional en A4 vertical (también A3)
+- Impresión profesional en A4 vertical
 - Vista previa digital compartible
+- Publicación en GitHub Pages bajo `/menu-poster/`
 
 ## Cómo ejecutar
 

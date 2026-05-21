@@ -26,7 +26,7 @@ const emitStaticRouteEntries = () => ({
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
-  base: command === "build" ? "/print-first-qr-card/" : "/",
+  base: command === "build" ? "/menu-poster/" : "/",
   server: {
     host: "::",
     port: 8080,
