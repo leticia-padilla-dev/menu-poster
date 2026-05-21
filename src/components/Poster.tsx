@@ -1,7 +1,6 @@
 import bgImage from "@/assets/fiesta-cireres.png";
-import cherryBranch from "@/assets/cherries.jpg";
-import cherries1 from "@/assets/cherries1.jpg";
-import cherryDetail from "@/assets/cherries2.jpg";
+import cherryBranch from "@/assets/cherries_botanical_right.png";
+import cherryDetail from "@/assets/cherries_botanical_left.png";
 
 // High-quality custom SVG Cherry Icon for bullet points and section ornaments
 const CherryIcon = ({ className, size = 16 }: { className?: string; size?: number }) => (
@@ -102,7 +101,7 @@ const Poster = () => {
 
       <div className="paper-softener" aria-hidden="true" />
 
-      {/* Top-Right Cherry Branch (Styled as a warm, sepia-filtered vintage botanical illustration) */}
+      {/* Top-Right Cherry Branch (Genuine vintage botanical illustration overlay) */}
       <img
         src={cherryBranch}
         alt=""
@@ -111,50 +110,19 @@ const Poster = () => {
           position: "absolute",
           zIndex: 1,
           top: "-5mm",
-          right: "-26mm",
-          width: "104mm",
-          height: "128mm",
-          objectFit: "cover",
-          objectPosition: "76% 44%",
+          right: "-10mm",
+          width: "90mm",
+          height: "90mm",
+          objectFit: "contain",
           opacity: 0.95,
-          filter: "sepia(0.18) saturate(0.85) contrast(1.05) brightness(1.02)",
-          transform: "rotate(3deg)",
-          WebkitMaskImage:
-            "linear-gradient(90deg, transparent 0%, black 3%, black 100%), linear-gradient(180deg, black 0%, black 98%, transparent 100%)",
-          maskImage:
-            "linear-gradient(90deg, transparent 0%, black 3%, black 100%), linear-gradient(180deg, black 0%, black 98%, transparent 100%)",
-          WebkitMaskComposite: "source-in",
-          maskComposite: "intersect",
+          mixBlendMode: "multiply",
+          transform: "rotate(8deg)",
           pointerEvents: "none",
           userSelect: "none",
         }}
       />
 
-      {/* Top-Left Hanging Cherry Branch (cherries1.jpg - "Cambiar gravedad" style hanging from the top edge, avoiding mountains entirely) */}
-      <img
-        src={cherries1}
-        alt=""
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          zIndex: 1,
-          left: "-16mm",
-          top: "-15mm",
-          width: "56mm",
-          height: "85mm",
-          objectFit: "cover",
-          objectPosition: "center",
-          opacity: 0.82,
-          filter: "sepia(0.18) saturate(0.85) contrast(1.05) brightness(1.02)",
-          transform: "rotate(-5deg)",
-          WebkitMaskImage: "radial-gradient(ellipse at 35% 35%, black 0%, black 50%, transparent 88%)",
-          maskImage: "radial-gradient(ellipse at 35% 35%, black 0%, black 50%, transparent 88%)",
-          pointerEvents: "none",
-          userSelect: "none",
-        }}
-      />
-
-      {/* Middle-Right Cherry Branch (cherries2.jpg - aligned perfectly above the dark green footer to preserve mountains and the footer gold border) */}
+      {/* Top-Left Hanging Cherry Branch (Genuine vintage botanical illustration overlay, leaving the mountain sketch below completely free) */}
       <img
         src={cherryDetail}
         alt=""
@@ -162,16 +130,14 @@ const Poster = () => {
         style={{
           position: "absolute",
           zIndex: 1,
-          right: "-15mm",
-          bottom: "55mm",
-          width: "55mm",
-          height: "85mm",
-          objectFit: "cover",
-          objectPosition: "center",
-          opacity: 0.8,
-          filter: "sepia(0.18) saturate(0.85) contrast(1.05) brightness(1.02)",
-          WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 55%, transparent 88%)",
-          maskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 55%, transparent 88%)",
+          left: "-5mm",
+          top: "-5mm",
+          width: "70mm",
+          height: "70mm",
+          objectFit: "contain",
+          opacity: 0.92,
+          mixBlendMode: "multiply",
+          transform: "rotate(-5deg)",
           pointerEvents: "none",
           userSelect: "none",
         }}
