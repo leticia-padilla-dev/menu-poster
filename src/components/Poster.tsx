@@ -1,5 +1,6 @@
 import bgImage from "@/assets/fiesta-cireres.png";
 import cherryBranch from "@/assets/cherries.jpg";
+import cherries1 from "@/assets/cherries1.jpg";
 import cherryDetail from "@/assets/cherries2.jpg";
 
 const firstCourses = [
@@ -57,6 +58,7 @@ const Poster = () => {
 
       <div className="paper-softener" aria-hidden="true" />
 
+      {/* Top-Right Cherry Branch (Shifted slightly to the right to avoid overlapping text) */}
       <img
         src={cherryBranch}
         alt=""
@@ -65,7 +67,7 @@ const Poster = () => {
           position: "absolute",
           zIndex: 1,
           top: "5mm",
-          right: "-22mm",
+          right: "-26mm",
           width: "104mm",
           height: "128mm",
           objectFit: "cover",
@@ -84,6 +86,30 @@ const Poster = () => {
         }}
       />
 
+      {/* Middle-Right Cherry Branch (cherries1.jpg - portrait crop, added to increase cherry presence above the green footer) */}
+      <img
+        src={cherries1}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          right: "-12mm",
+          bottom: "55mm",
+          width: "60mm",
+          height: "90mm",
+          objectFit: "cover",
+          objectPosition: "center",
+          opacity: 0.85,
+          filter: "saturate(1.08) contrast(1.04) brightness(1)",
+          WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 60%, transparent 90%)",
+          maskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 60%, transparent 90%)",
+          pointerEvents: "none",
+          userSelect: "none",
+        }}
+      />
+
+      {/* Middle-Left Cherry Branch (cherries2.jpg - positioned below the castle sketch to frame the card on the left side) */}
       <img
         src={cherryDetail}
         alt=""
@@ -91,16 +117,16 @@ const Poster = () => {
         style={{
           position: "absolute",
           zIndex: 1,
-          right: "-18mm",
-          bottom: "45mm",
-          width: "56mm",
-          height: "42mm",
+          left: "-18mm",
+          top: "135mm",
+          width: "52mm",
+          height: "68mm",
           objectFit: "cover",
-          objectPosition: "78% 80%",
-          opacity: 0.64,
-          filter: "saturate(1.08) contrast(1.06) brightness(1.02)",
-          WebkitMaskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 62%, transparent 88%)",
-          maskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 62%, transparent 88%)",
+          objectPosition: "center",
+          opacity: 0.75,
+          filter: "saturate(1.06) contrast(1.04) brightness(1)",
+          WebkitMaskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 55%, transparent 88%)",
+          maskImage: "radial-gradient(ellipse at 50% 50%, black 0%, black 55%, transparent 88%)",
           pointerEvents: "none",
           userSelect: "none",
         }}
@@ -132,7 +158,7 @@ const Poster = () => {
           </section>
 
           <div className="menu-bottom-row">
-            <p>Entra una bebida</p>
+            <p>Incluye una bebida</p>
             <aside aria-label="Precio">
               <strong>25 €</strong>
               <span>por persona</span>
