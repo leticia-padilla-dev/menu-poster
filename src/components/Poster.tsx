@@ -122,7 +122,7 @@ const Poster = () => {
         }}
       />
 
-      {/* Top-Left Hanging Cherry Branch (Genuine vintage botanical illustration overlay, leaving the mountain sketch below completely free) */}
+      {/* Middle-Left Hanging Cherry Branch (Genuine vintage botanical illustration overlay, completely below the castle and near the middle of the poster height) */}
       <img
         src={cherryDetail}
         alt=""
@@ -130,14 +130,14 @@ const Poster = () => {
         style={{
           position: "absolute",
           zIndex: 1,
-          left: "-10mm",
-          top: "35mm",
+          left: "-12mm",
+          top: "115mm",
           width: "70mm",
           height: "70mm",
           objectFit: "contain",
           opacity: 0.92,
           mixBlendMode: "multiply",
-          transform: "rotate(-12deg)",
+          transform: "rotate(-8deg)",
           pointerEvents: "none",
           userSelect: "none",
         }}
