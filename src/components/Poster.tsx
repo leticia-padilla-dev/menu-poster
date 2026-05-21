@@ -71,12 +71,12 @@ const Poster = () => {
           objectFit: "cover",
           objectPosition: "76% 44%",
           opacity: 1,
-          filter: "saturate(1.18) contrast(1.12) brightness(1.02)",
+          filter: "saturate(1.08) contrast(1.04) brightness(1)",
           transform: "rotate(1.5deg)",
           WebkitMaskImage:
-            "linear-gradient(90deg, transparent 0%, black 9%, black 100%), linear-gradient(180deg, black 0%, black 92%, transparent 100%)",
+            "linear-gradient(90deg, transparent 0%, black 3%, black 100%), linear-gradient(180deg, black 0%, black 98%, transparent 100%)",
           maskImage:
-            "linear-gradient(90deg, transparent 0%, black 9%, black 100%), linear-gradient(180deg, black 0%, black 92%, transparent 100%)",
+            "linear-gradient(90deg, transparent 0%, black 3%, black 100%), linear-gradient(180deg, black 0%, black 98%, transparent 100%)",
           WebkitMaskComposite: "source-in",
           maskComposite: "intersect",
           pointerEvents: "none",
@@ -97,11 +97,10 @@ const Poster = () => {
           height: "42mm",
           objectFit: "cover",
           objectPosition: "78% 80%",
-          opacity: 0.28,
-          filter: "saturate(0.78) brightness(1.18)",
-          mixBlendMode: "multiply",
-          WebkitMaskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 45%, transparent 76%)",
-          maskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 45%, transparent 76%)",
+          opacity: 0.64,
+          filter: "saturate(1.08) contrast(1.06) brightness(1.02)",
+          WebkitMaskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 62%, transparent 88%)",
+          maskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 62%, transparent 88%)",
           pointerEvents: "none",
           userSelect: "none",
         }}
@@ -110,8 +109,8 @@ const Poster = () => {
       <div className="poster-content" style={{ zIndex: 3 }}>
         <header className="poster-header">
           <p>Bar Jubilats · Serra</p>
-          <h1>Menú especial</h1>
-          <div>Fira de la Cirera</div>
+          <h1>Feria de la Cirera</h1>
+          <div>Menú especial</div>
         </header>
 
         <main className="menu-panel" aria-label="Menú especial">
