@@ -190,7 +190,7 @@ const Poster = () => {
         <header className="poster-header">
           <p>Bar Jubilats · Serra</p>
           <h1>Feria de la Cirera</h1>
-          <div>Menú especial</div>
+          <div>Menú especial · 30 y 31 de mayo</div>
         </header>
 
         <main className="menu-panel" aria-label="Menú especial">
