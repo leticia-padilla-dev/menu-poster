@@ -139,6 +139,7 @@
     font-weight: 700;
     line-height: 0.9;
     color: hsl(354 58% 28%);
+    text-shadow: 0 1px 8px hsl(38 70% 96% / 0.8), 0 2px 20px hsl(38 70% 96% / 0.6);
   }
 
   .poster-header div {
@@ -226,12 +227,12 @@
 
   .menu-bottom-row p {
     margin: 0;
-    padding: 2.5mm 6mm 3mm;
+    padding: 2mm 5mm 2.5mm;
     border-radius: 999px;
     background: hsl(354 58% 31%);
     color: hsl(38 62% 96%);
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 19pt;
+    font-size: 16pt;
     font-style: italic;
     font-weight: 700;
     line-height: 1;
@@ -241,16 +242,16 @@
 
   .menu-bottom-row aside {
     display: grid;
-    width: 34mm;
-    height: 34mm;
+    width: 29mm;
+    height: 29mm;
     place-items: center;
     align-content: center;
-    border: 1.4mm double hsl(38 62% 94% / 0.72);
+    border: 1.2mm double hsl(38 62% 94% / 0.72);
     border-radius: 999px;
     background: hsl(354 58% 29%);
     color: hsl(38 62% 96%);
     text-align: center;
-    box-shadow: 0 5mm 12mm hsl(354 58% 20% / 0.22);
+    box-shadow: 0 4mm 10mm hsl(354 58% 20% / 0.18);
   }
 
   .menu-bottom-row strong {
