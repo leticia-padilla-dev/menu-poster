@@ -26,3 +26,13 @@ npm run build
    - Desactivar **Encabezados y pies de página**
    - Activar **Gráficos de fondo**
 4. Imprimir o guardar como PDF.
+
+## Validación print-first
+
+Validación final ejecutada sobre `main` actualizado:
+
+```bash
+npm run build
+```
+
+Resultado: build correcta. El cartel conserva tamaño A4 vertical, rutas de Pages bajo `/menu-poster/` y estilos de impresión con `@page` sin márgenes.
