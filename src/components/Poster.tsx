@@ -224,38 +224,6 @@ const Poster = () => {
           </div>
         </main>
 
-        {/* Reservas */}
-        <footer className="poster-footer mt-auto pt-6 text-center">
-          <div
-            className="mx-auto mb-2"
-            style={{
-              width: "48mm",
-              height: "1px",
-              background:
-                "linear-gradient(90deg, transparent, hsl(143 45% 18% / 0.28), transparent)",
-            }}
-          />
-          <div
-            className="uppercase tracking-[0.24em] text-[8.5pt] font-bold"
-            style={{
-              color: "hsl(143 45% 22%)",
-              fontFamily: "'Inter', system-ui, sans-serif",
-            }}
-          >
-            Plazas Limitadas · Reservas
-          </div>
-          <div
-            className="mt-1 text-[13.5pt]"
-            style={{
-              fontFamily: "'Inter', system-ui, sans-serif",
-              fontWeight: 800,
-              color: "hsl(354 58% 31%)",
-              letterSpacing: "0.06em",
-            }}
-          >
-            615 92 97 35
-          </div>
-        </footer>
       </div>
     </article>
   );
