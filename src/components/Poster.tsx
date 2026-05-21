@@ -1,4 +1,6 @@
 import bgImage from "@/assets/fiesta-cireres.png";
+import cherryBranch from "@/assets/cherries.jpg";
+import cherryDetail from "@/assets/cherries2.jpg";
 
 const firstCourses = [
   "Crostini con queso de cabra y cerezas confitadas",
@@ -55,7 +57,57 @@ const Poster = () => {
 
       <div className="paper-softener" aria-hidden="true" />
 
-      <div className="poster-content">
+      <img
+        src={cherryBranch}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          top: "8mm",
+          right: "-28mm",
+          width: "92mm",
+          height: "122mm",
+          objectFit: "cover",
+          objectPosition: "72% 40%",
+          opacity: 0.9,
+          filter: "saturate(0.9) contrast(1.04) brightness(1.05)",
+          transform: "rotate(1.5deg)",
+          WebkitMaskImage:
+            "linear-gradient(90deg, transparent 0%, black 18%, black 100%), linear-gradient(180deg, black 0%, black 84%, transparent 100%)",
+          maskImage:
+            "linear-gradient(90deg, transparent 0%, black 18%, black 100%), linear-gradient(180deg, black 0%, black 84%, transparent 100%)",
+          WebkitMaskComposite: "source-in",
+          maskComposite: "intersect",
+          pointerEvents: "none",
+          userSelect: "none",
+        }}
+      />
+
+      <img
+        src={cherryDetail}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          right: "-18mm",
+          bottom: "45mm",
+          width: "56mm",
+          height: "42mm",
+          objectFit: "cover",
+          objectPosition: "78% 80%",
+          opacity: 0.28,
+          filter: "saturate(0.78) brightness(1.18)",
+          mixBlendMode: "multiply",
+          WebkitMaskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 45%, transparent 76%)",
+          maskImage: "radial-gradient(ellipse at 62% 55%, black 0%, black 45%, transparent 76%)",
+          pointerEvents: "none",
+          userSelect: "none",
+        }}
+      />
+
+      <div className="poster-content" style={{ zIndex: 3 }}>
         <header className="poster-header">
           <p>Menú especial</p>
           <h1>Fira de la Cirera</h1>
