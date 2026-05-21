@@ -144,6 +144,27 @@ const Poster = () => {
         }}
       />
 
+      {/* Lower-Left Cherry Branch with Flowers (Genuine vintage botanical illustration overlay, below the middle-left branch and above the mountains) */}
+      <img
+        src={cherryFlowers}
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          top: "175mm",
+          left: "-10mm",
+          width: "70mm",
+          height: "70mm",
+          objectFit: "contain",
+          opacity: 0.95,
+          mixBlendMode: "multiply",
+          transform: "rotate(15deg)",
+          pointerEvents: "none",
+          userSelect: "none",
+        }}
+      />
+
       {/* Middle-Right Cherry Branch with Flowers (Genuine vintage botanical illustration overlay featuring blossoms, in the middle height on the right side) */}
       <img
         src={cherryFlowers}
