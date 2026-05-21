@@ -142,7 +142,7 @@
     text-shadow: 0 1px 8px hsl(38 70% 96% / 0.8), 0 2px 20px hsl(38 70% 96% / 0.6);
   }
 
-  .poster-header div {
+  .poster-header .menu-subtitle {
     margin-top: 3mm;
     font-family: "Inter", system-ui, sans-serif;
     font-size: 10.5pt;
@@ -151,9 +151,20 @@
     text-transform: uppercase;
   }
 
+  .poster-header .menu-dates {
+    margin-top: 2.2mm;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 12.5pt;
+    font-weight: 800;
+    color: hsl(354 58% 28%);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px hsl(38 70% 96% / 0.6);
+  }
+
   .menu-panel {
     width: min(136mm, 100%);
-    margin-top: 12mm;
+    margin-top: 10mm;
     padding: 7mm 10mm 8mm;
     border: 1px solid hsl(42 34% 55% / 0.46);
     border-radius: 3mm;
