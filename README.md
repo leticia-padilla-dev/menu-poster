@@ -7,12 +7,18 @@ Una sola página optimizada para:
 - Vista previa digital compartible
 - Publicación en GitHub Pages bajo `/menu-poster/`
 
+URL pública:
+
+- `https://leticia-padilla-dev.github.io/menu-poster/`
+
 ## Cómo ejecutar
 
 ```bash
 npm install
+npm run lint
 npm run dev
 npm run build
+npm test
 ```
 
 ## Cómo imprimir

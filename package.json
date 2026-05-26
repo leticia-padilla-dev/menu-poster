@@ -2,6 +2,12 @@
   "name": "menu-poster",
   "private": true,
   "version": "0.0.0",
+  "description": "Print-first menu poster for Bar Jubilats Serra during the Fira de la Cirera.",
+  "homepage": "https://leticia-padilla-dev.github.io/menu-poster/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leticia-padilla-dev/menu-poster.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
